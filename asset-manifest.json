@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/final-day-/static/css/main.f855e6bc.css",
+    "main.js": "/final-day-/static/js/main.a321d262.js",
+    "index.html": "/final-day-/index.html",
+    "main.f855e6bc.css.map": "/final-day-/static/css/main.f855e6bc.css.map",
+    "main.a321d262.js.map": "/final-day-/static/js/main.a321d262.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.a321d262.js"
+  ]
+}
