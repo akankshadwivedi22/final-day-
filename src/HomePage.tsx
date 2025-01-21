@@ -18,7 +18,7 @@ function HomePage() {
   const navigate = useNavigate(); 
 
   useEffect(() => {
-    if (today.getDate() === 23) {
+    if (today.getDate() === 21) {
 
       console.log(today.getDate() === 27)
       setButtonEnable(true); 
@@ -101,7 +101,7 @@ function HomePage() {
       <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
         <GlobalStyle />
         <CountdownComponent>
-          <h2>Countdown to January 19, 2025!🪩</h2>
+          <h2>Countdown to January 27, 2025!🪩</h2>
           <TimerBox>
             <Countdown
               date={new Date(targetDate).getTime()}
