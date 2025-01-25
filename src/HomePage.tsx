@@ -18,7 +18,7 @@ function HomePage() {
   const navigate = useNavigate(); 
 
   useEffect(() => {
-    if (today.getDate() === 21) {
+    if (today.getDate() === 27) {
 
       console.log(today.getDate() === 27)
       setButtonEnable(true); 
@@ -33,14 +33,10 @@ function HomePage() {
     }
   }, []); 
   const handleYesClick = () => {
-    if (!buttonEnable) {
-      alert("This button is disabled. You can't click it right now.");
-      return;
-    }
-
-
-
-
+    // if (!buttonEnable) {
+    //   alert("This button is disabled. You can't click it right now.");
+    //   return;
+    // }
     const jsConfetti = new JSConfetti();  
     jsConfetti.addConfetti(); 
 
@@ -76,10 +72,10 @@ function HomePage() {
   };
 
   const handleNoClick = () => {
-    if (!buttonEnable) {
-      alert("This button is disabled. You can't click it right now.");
-      return;
-    }
+    // if (!buttonEnable) {
+    //   alert("This button is disabled. You can't click it right now.");
+    //   return;
+    // }
 
     alert("🚫 You can't say NO to your girlfriend, don't you know it? 😜");
   };
@@ -145,8 +141,8 @@ function HomePage() {
                 </p>
               </TextWrapper>
               <ButtonWrapper>
-                <button onClick={handleYesClick} disabled={!buttonEnable}>Yes</button>
-                <button onClick={handleNoClick} disabled={!buttonEnable}>No</button>
+                <button onClick={handleYesClick} >Yes</button>
+                <button onClick={handleNoClick} >No</button>
               </ButtonWrapper>
             </ModalCard>
           </ModalCardWrapper>
